@@ -67,6 +67,8 @@ function getLocation(){
         <li> Humidity {weather.humidity}%</li>
         <li> Wind {weather.wind}mph</li>
       </ul>
+      <p id="source"> <a href="https://github.com/hope-rachelle/react-week4" target="_blank">Open-Source Code </a>
+    by Hope Ciuffa </p>
     </div>
   );
 }
