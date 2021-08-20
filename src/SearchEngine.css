@@ -7,10 +7,11 @@
     border-width: 5px;
     background-image: linear-gradient(to top, #c3ced4 0%, #e2ebf0 100%);
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 400px;
     height: 500px;
     margin-top: 70px;
     margin-left: 20px;  
+    font-family: 'Klee One', cursive;
 }
 form {
     margin-top: 20px;
@@ -22,6 +23,11 @@ input {
     color: grey;
     margin-left: 5px;
   }
+
+  h1 {
+    color: rgb(100, 99, 99);
+    font-family: 'Klee One', cursive;
+}
 
   h3 {
       color: gray;

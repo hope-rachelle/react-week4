@@ -55,9 +55,9 @@ function getLocation(){
         <input type="submit" value="📫" onClick={getLocation} />
       </form>  
       
-      <h3 className="city">
+      <h1 className="city">
         {weather.city}
-      </h3>
+      </h1>
       <ul className="elements">
         <li>
             <h3>{weather.description}</h3>
