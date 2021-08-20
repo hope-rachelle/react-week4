@@ -37,3 +37,8 @@ input {
 li {
     list-style: none;
 }
+p {
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 30px;
+}
