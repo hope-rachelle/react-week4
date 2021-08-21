@@ -69,7 +69,7 @@ function getLocation(){
         <li> Wind {weather.wind}mph</li>
       </ul>
       </div>
-      <p id="source"> <a href="https://github.com/hope-rachelle/react-week4" target="_blank">Open-Source Code </a>
+      <p id="source"> <a href="https://github.com/hope-rachelle/react-week4" target="_blank" rel="noreferrer">Open-Source Code </a>
     by Hope Ciuffa </p>
     </div>
   );
