@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Time from "./Time";
+import ForecastTime from "./ForecastTime";
 import "./SearchEngine.css";
 
 
 export default function SearchEngine(props) {
 const [city, setCity] = useState(props.city);
 const [weather, setWeather] = useState("");
+//const [time, setTime] = useState(props.time)
+
 
   function showWeather(response) {
     console.log(response);
@@ -41,7 +45,7 @@ function getLocation(){
     navigator.geolocation.getCurrentPosition(recievePosition);
 }
 
-
+    
   return (
       <div className="app">
     <div className="body">
@@ -59,6 +63,7 @@ function getLocation(){
       <h1 className="city">
         {weather.city}
       </h1>
+      <Time/>
       <ul className="elements">
         <li>
             <h3>{weather.description}</h3>
@@ -69,22 +74,15 @@ function getLocation(){
         <li> Wind {weather.wind}mph</li>
       </ul>
       <div> 
-    <div class="row hour-intervals">
-        <div class="col-2" id="two-hour">2pm</div>
-        <div class="col-2" id="four-hour">4pm</div>
-        <div class="col-2" id="six-hour">6pm</div>
-        <div class="col-2" id="eight-hour">8pm</div>
-        <div class="col-2" id="ten-hour">10pm</div>
-        <div class="col-2" id="twelve-hour">12pm</div>
-    </div>
+    <ForecastTime/>
  
     <div className="row temp-by-hour">
-        <div className="col-2">18℃</div>
-        <div className="col-2">16℃</div>
-        <div className="col-2">15℃</div>
-        <div className="col-2">15℃</div>
-        <div className="col-2">13℃</div>
-        <div className="col-2">12℃</div>
+        <div className="col-2">{weather.tempF}°F</div>
+        <div className="col-2">{weather.tempF}°F</div>
+        <div className="col-2">{weather.tempF}°F</div>
+        <div className="col-2">{weather.tempF}°F</div>
+        <div className="col-2">{weather.tempF}°F</div>
+        <div className="col-2">{weather.tempF}°F</div>
       </div>
     </div>
       </div>
