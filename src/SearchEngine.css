@@ -1,4 +1,4 @@
-.container {
+.body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: grey;
     text-align: center;
@@ -7,7 +7,7 @@
     border-width: 5px;
     background-image: linear-gradient(to top, #c3ced4 0%, #e2ebf0 100%);
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 450px;
     height: 500px;
     margin-top: 70px;
     margin-left: 20px;  
@@ -22,14 +22,15 @@ input {
     border-radius: 5px;
     color: grey;
     margin-left: 5px;
-  }
-
-  h1 {
-    color: rgb(100, 99, 99);
-    font-family: 'Klee One', cursive;
 }
 
-  h3 {
+.city {
+    color: rgb(100, 99, 99);
+    font-family: 'Klee One', cursive;
+    margin-top: 40px;
+}
+
+h3 {
       color: gray;
       font-size: 25px;
   }
@@ -37,6 +38,11 @@ input {
 li {
     list-style: none;
 }
+
+.elements {
+    margin-bottom: 50px;
+}
+
 p {
     text-align: left;
     margin-top: 0px;
