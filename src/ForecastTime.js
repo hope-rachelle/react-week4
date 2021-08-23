@@ -1,13 +1,13 @@
 import React from "react";
 
 export default function ForecastTime(){
-        let hourIntervals = new Date();
+        /*let hourIntervals = new Date();
         let hour = hourIntervals.getHours();
         let hourCode = "pm";
         if (hour < 12) {
         hourCode = "am"; } 
         if (hour > 12) {
-        hour = hour - 12;}
+        hour = hour - 12;}*/
     
 
 
